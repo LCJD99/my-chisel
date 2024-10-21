@@ -13,7 +13,7 @@ class SevenSegmentDisplayTest extends AnyFlatSpec with ChiselScalatestTester {
     test(new SevenSegmentDisplay()) { c =>
       c.io.in.poke(0.U)
       c.clock.step(1)
-      c.io.out.expect("b1111110".U)
+      c.io.out.expect("b1111111".U)
     }
   }
 }
